@@ -11,7 +11,6 @@ class Pacman {
   }
 
   shouldMove() {
-    // 按键之前不会动
     if (!this.dir) return;
 
     if (this.timer === this.speed) {
@@ -23,7 +22,6 @@ class Pacman {
 
   getNextMove(objectExist) {
     let nextMovePos = this.pos + this.dir.movement;
-    // 撞墙？撞鬼？
     if (
       objectExist(nextMovePos, OBJECT_TYPE.WALL) ||
       objectExist(nextMovePos, OBJECT_TYPE.GHOSTLAIR)
