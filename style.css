@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url('background.jpg') no-repeat center center fixed;
+  background: url("background.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -16,6 +16,7 @@ body {
 }
 
 #game {
+  margin-top: 55px;
   position: relative;
   display: inline-grid;
   background: black;
@@ -23,7 +24,7 @@ body {
 
 .game-status {
   position: absolute;
-  top: 0;
+  top: -60px;
   left: 0;
   display: flex;
   align-items: center;
@@ -90,7 +91,7 @@ body {
 }
 
 .ghost::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 3px;
@@ -103,7 +104,7 @@ body {
 }
 
 .ghost::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 3px;
